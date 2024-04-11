@@ -288,6 +288,7 @@
     flex-direction: column;
     gap: 24px;
     overflow-y: auto;
+    max-height: 99vh;
 }
 
 .todo-card-detailed .todo-category {
@@ -317,7 +318,7 @@
 }
 
 .todo-card-detailed h1 {
-    font-size: 61px;
+    font-size: 55px !important;
 }
 
 .todo-card-detailed h2 {
@@ -481,5 +482,15 @@
 @media (max-width: 770px) {
     .todo-card-detailed {
         max-width: unset;
+    }
+}
+
+@media (max-height: 750px) {
+    .todo-card-detailed h1 {
+        font-size: 28px !important;
+    }
+
+    .todo-card-detailed h2 {
+        font-size: 18px;
     }
 }
